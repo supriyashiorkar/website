@@ -1,0 +1,217 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+.header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/public/images2/frnds2.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.wbst4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo4{
+    width: 120px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    color: white; text-decoration: none;
+}
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container4{
+    padding: 0 7%;
+}
+.header4 h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff; text-align: center;
+    padding-top: 20%;
+}
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+button img{
+    width: 20px;
+}
+.search-bar form{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+.search-bar form input {
+    display: block; border: 0;
+    outline: none; 
+    background: transparent;
+}
+.search-bar form button{
+    background: #ff5361;
+    width: 50px; height: 50px;
+    border-radius: 50%; border: 0; outline: none;
+    cursor: pointer;
+}
+.location{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+.sub-title{
+    margin: 50px 20px;
+    font-size: 30px; font-weight: 500; color: #333;
+}
+.exclusives{
+   display: flex;
+
+}
+.exclusives div img{
+    width:270px; height: 250px;
+    padding: 8px;
+    border-radius: 30px;
+}
+.exclusives div{
+    position: relative;
+}
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: 900;
+}
+.trending{
+    display: flex;
+ 
+}
+.trending div img{
+    width: 320px; height: 270px;
+    padding: 10px; border-radius: 30px;
+}
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.cta{
+    margin: 80px 0px;
+    background-image: url(/public/images2/sofa.jpg);
+    background-size: cover;
+    background-position: center;
+border-radius: 10px;
+padding: 10%;
+color:rgb(14, 12, 12);
+}
+.cta h3{
+    font-size: 40px;
+    line-height: 5.3vw; font-weight: 500;
+}
+.cta p{
+    font-weight: 500; font-size: 18px; margin: 10px 0px;
+}
+.cta-btn{
+    background: #ff5361; color: #fff; text-decoration: none; padding: 12px 30px; border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.stories{
+    display: flex; 
+}
+.stories img{
+    height: 400px ; width: 400px; border-radius: 10px; margin: 20px;
+}
+.stories div{
+    position: relative; text-align: center;
+}
+.stories p{
+    width: 80%; position: absolute; top: 50%; left: 10%;
+    /* transform: translate(-50%,-50%); */
+    font-weight: 600; font-size: large; 
+}
+.start-btn{
+    text-decoration: none;
+    background-color: #ff5361; color: #fff;
+    width: 80%; max-width: 350px;
+    display: block; text-align: center; 
+    margin: 40px auto; 
+    padding: 15px; border-radius: 30px; font-size: 20px;
+}
+.about-msg{
+    text-align: center; margin: 60px 0px; color: #333;
+    font-size: 17px;
+}
+.about-msg h2{
+    font-size: 28px; font-weight: 500; margin-bottom: 30px;
+
+}
+.footer4{
+    display: flex;   margin-left: 36%;
+}
+.footer4 a img{
+    height: 40px; width: 40px; text-align: center; justify-content: center; margin: 0 10px;
+}
+ hr{
+    background: #999;
+    height: 1px; width: 100%; border: 0;
+    margin: 15px 0; 
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: "";
+    background: #fff;
+    width: 25px; height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+.icon{
+    height: 25x; width: 25px; margin-left: 60px;
+}
+
+/* for smaller screen devices */
+
+@media only screen and (max-width:700px) {
+    .logo4{
+        position: fixed;
+        top: 4%; left: 7%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000; text-align: right;
+    }
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+
+    }
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+}

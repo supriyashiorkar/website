@@ -1,0 +1,9 @@
+.calci{
+    background-image: url(/public/images3/cafeteria.jpg); width: 100%; height: 100vh; position: relative;
+    background-repeat: no-repeat; background-size: cover; background-position: center;
+   
+}
+#text{
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+}

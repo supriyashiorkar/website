@@ -1,0 +1,35 @@
+.container2{
+    margin: 3rem;
+display: grid;
+grid-gap: 1rem;
+grid-template-areas: 
+'navbar2 navbar2 navbar2 navbar2'
+'section2 section2 aside2 aside2'
+'footer2 footer2 footer2 footer2'
+;
+}
+.item{
+    background-color: red;
+    border: 3px solid black;
+    padding: 1rem;
+    /* margin: 1rem; */
+}
+#navbar2{
+grid-area: navbar2;
+padding: 2rem;
+background: url(/public/images/flr.webp);
+}
+#section2{
+grid-area:section2 ;
+background: url(/public/images/flr2.jpeg);
+}
+#aside2{
+grid-area:aside2 ;
+background: url(/public/images/ntr.jpeg);
+}
+#footer2{
+grid-area: footer2;
+padding: 1.5rem;
+background: url(/public/images/rose.webp) no-repeat center center/cover;
+opacity: 0.80;
+}
